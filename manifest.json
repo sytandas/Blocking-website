@@ -1,0 +1,14 @@
+{
+  "name": "Blocking website",
+  "description": "General purpose extenstion!",
+  "version": "0.1",
+  "manifest_version": 3,
+  "background": {
+    "service_worker": "block.js"
+  },
+  "permissions": ["storage"],
+  "action": {
+    "default_popup": "popup.html"
+  }
+}
+
