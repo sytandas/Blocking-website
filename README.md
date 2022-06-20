@@ -1,2 +1,3 @@
-Simple chrome extension to block website
+Simple chrome extension to block website.
+
 
