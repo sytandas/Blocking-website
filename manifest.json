@@ -4,7 +4,9 @@
   "version": "0.1",
   "manifest_version": 3,
   "background": {
-    "service_worker": "block.js"
+    "script": [
+    "background.js"
+    ]
   },
   "permissions": ["storage"],
   "action": {
