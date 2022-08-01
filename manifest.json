@@ -1,16 +1,19 @@
 {
   "name": "Blocking website",
-  "description": "General purpose extenstion!",
-  "version": "0.1",
-  "manifest_version": 3,
-  "background": {
-    "script": [
-    "background.js"
+  "description": "Helps you blocking distracting websites",
+  "version": "1.0",
+  "permissions": [
+     "webRequestBlocking",
+     "webRequest",
+     "activeTab",
+     "tabs",
+     "http://*/*",
+     "https://*/*"
+  ],
+  "background" : {
+    "scripts":  [
+      "background.js"
     ]
   },
-  "permissions": ["storage"],
-  "action": {
-    "default_popup": "popup.html"
-  }
+  "manifest_version": 2
 }
-
