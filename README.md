@@ -1,6 +1,25 @@
-Simple chrome extension to block website
-feture: 
-show how long you can keep away from the blocked website
-progress in (hrs,day/day) 
+# Simple chrome extension to block website
 
-alternatively - showing useful chart (that motivate not to open blocked website)
+# Installation
+1. Clone the repo.
+2. Open the Extension Management page by navigating to `chrome://extensions`.
+3. Enable Developer Mode.
+4. Click the LOAD UNPACKED button and select the extension directory (this repository, where it was cloned to).
+
+## How it works?
+This is implimented using an chrome API (declarativeNetRequest) that enables plugin developers to intercept, block without hamper of privacy 
+by using manifest version 3.
+
+e.g. if you want to block www.facebook.com:
+edit the rules_2.json file adding these code - 
+
+[
+    {
+      "id": 1,
+      "priority": 1,
+      "action": { "type": "block" },
+      "condition": {"urlFilter": "facebook.com", "resourceTypes": ["main_frame"] }
+    }
+]
+
+if you add more website add id and write in between [ ], using , for seperation. 
