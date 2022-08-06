@@ -12,7 +12,7 @@ by using manifest version 3.
 
 e.g. if you want to block www.facebook.com:
 edit the rules_2.json file adding these code - 
-
+```
 [
     {
       "id": 1,
@@ -21,5 +21,5 @@ edit the rules_2.json file adding these code -
       "condition": {"urlFilter": "facebook.com", "resourceTypes": ["main_frame"] }
     }
 ]
-
+```
 if you add more website add id and write in between [ ], using , for seperation. 
