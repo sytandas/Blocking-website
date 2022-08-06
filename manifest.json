@@ -2,18 +2,23 @@
   "name": "Blocking website",
   "description": "Helps you blocking distracting websites",
   "version": "1.0",
+  "declarative_net_request" : {
+    "rule_resources" : [{
+      "id": "ruleset_1",
+      "enabled": true,
+      "path": "rules_1.json"
+    }]
+  },
   "permissions": [
-     "webRequestBlocking",
-     "webRequest",
-     "activeTab",
-     "tabs",
-     "http://*/*",
-     "https://*/*"
+    "declarativeNetRequestWithHostAccess",
+    "webRequest",
+    "declarativeNetRequest",
+    "activeTab",
+    "tabs",
+    "notifications"
   ],
   "background" : {
-    "scripts":  [
-      "background.js"
-    ]
+    "service_worker" : "background.js"
   },
-  "manifest_version": 2
+  "manifest_version": 3
 }
