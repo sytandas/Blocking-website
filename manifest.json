@@ -7,6 +7,10 @@
       "id": "ruleset_1",
       "enabled": true,
       "path": "rules_1.json"
+    }, {
+      "id": "ruleset_2",
+      "enabled": false,
+      "path": "rules_2.json"
     }]
   },
   "permissions": [

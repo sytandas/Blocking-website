@@ -1,5 +1,5 @@
 console.log("connected");
-
+/*
 chrome.declarativeNetRequest.updateDynamicRules({
   addRules: [{
     'id': 1,
@@ -7,7 +7,7 @@ chrome.declarativeNetRequest.updateDynamicRules({
     'action': {'type': 'block'},
     'condition': {
       //'urlFilter': 'twitter',
-      //'domains' : ["twitter.com"],
+      'domains' : ["twitter.com"],
       'resourceTypes': [
         'csp_report', 'font', 'image', 'main_frame', 'media', 'object', 'other', 'ping', 'script',
         'stylesheet', 'sub_frame', 'webbundle', 'websocket', 'webtransport', 'xmlhttprequest'
@@ -16,3 +16,4 @@ chrome.declarativeNetRequest.updateDynamicRules({
   }],
   removeRuleIds: [1001]
 })
+*/
