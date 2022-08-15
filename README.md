@@ -1,5 +1,8 @@
 # Simple chrome extension to block website
 
+Making website greyscale!
+-> research found that if we make a page into greyscale, the website become less attractive == less time wasting:w
+
 # Installation
 1. Clone the repo.
 2. Open the Extension Management page by navigating to `chrome://extensions`.
