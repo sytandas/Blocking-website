@@ -1,21 +1,22 @@
 {
   "manifest_version": 3,
-  "name": "Blocking website",
+  "name": "Manage distraction",
   "description": "Helps you blocking distracting websites",
   "version": "1.0",
   "permissions": [
     "declarativeNetRequestWithHostAccess",
-    "webRequest",
     "declarativeNetRequest",
     "activeTab",
     "tabs",
     "notifications"
   ],
-    "content_scripts": [{
+      "content_scripts": [{
       "matches": ["http://*/*", "https://*/*"],
+      //"matches": ["http://www.youtube.com", "https://www.youtube.com"],
       "css": ["/style.css"]
   }],
 
-  "permissions": ["http://*/*", "https://*/*"],
+  //"permissions": ["http://*/*", "https://*/*"],
+  "permissions": ["http://www.youtube.com", "https://www.youtube.com"],
   "background": { "service_worker": "background.js"}
 }

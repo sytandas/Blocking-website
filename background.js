@@ -1,8 +1,3 @@
 console.log("connected");
-
-/*
-window.addEventListener('load', ()=>{
-document.body.style.filter = 'grayscale(100%)';
-});
-*
+// a json file consist of website need to greyscale
 
