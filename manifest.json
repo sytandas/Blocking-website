@@ -1,18 +1,8 @@
 {
+  "manifest_version": 3,
   "name": "Blocking website",
   "description": "Helps you blocking distracting websites",
   "version": "1.0",
-  "declarative_net_request" : {
-    "rule_resources" : [{
-      "id": "ruleset_1",
-      "enabled": true,
-      "path": "rules_1.json"
-    }, {
-      "id": "ruleset_2",
-      "enabled": false,
-      "path": "rules_2.json"
-    }]
-  },
   "permissions": [
     "declarativeNetRequestWithHostAccess",
     "webRequest",
@@ -21,9 +11,11 @@
     "tabs",
     "notifications"
   ],
-  "background" : {
-    "service_worker" : "background.js",
-    "type": "module"
-  },
-  "manifest_version": 3
+    "content_scripts": [{
+      "matches": ["http://*/*", "https://*/*"],
+      "css": ["/style.css"]
+  }],
+
+  "permissions": ["http://*/*", "https://*/*"],
+  "background": { "service_worker": "background.js"}
 }

@@ -116,4 +116,5 @@
       "action": { "type": "block" },
       "condition": {"urlFilter": "instagram.com", "resourceTypes": ["main_frame"] }
     }
-  ]
+
+]
