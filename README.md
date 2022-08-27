@@ -1,7 +1,6 @@
 # Simple chrome extension to block website
 
 Making website greyscale!
--> research found that if we make a page into greyscale, the website become less attractive 
 
 # Installation
 1. Clone the repo.
